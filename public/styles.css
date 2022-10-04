@@ -1,0 +1,390 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEF2E6;
+}
+
+h1,h2 {
+    font-family: 'Dancing Script', cursive;
+}
+
+p {
+    font-family: 'Overpass', sans-serif;
+}
+
+/* NavBar */
+
+.navbar {
+    z-index: 50;
+}
+
+div .tab {
+    border-radius: 10px;
+}
+
+.navbar img{
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+    .navbar img {
+        columns: 1 1rem;
+        width: 60%;
+    }
+}
+
+/* About */
+
+.about {
+    background-color: #EEF2E6;
+}
+
+.about-parallax-01 {
+    /* Set the background image */
+    background-image: url(images/bg01.jpg);
+
+    /* Set a specific height */
+    min-height: 1000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+    margin: 0 3rem 0 3rem;
+}
+
+.about-parallax-01 > h1 {
+    text-align: center;
+    position: relative;
+    top: 32rem;
+    font-size: 5rem;
+    color: #EEF2E6;
+}
+
+.about-content {
+    margin: 7rem 3rem;
+}
+
+.about-content-text {
+    margin: 1rem 5rem 0 5rem;
+}
+
+.about-content-text p{
+    text-align: justify;
+    font-size: 1.05rem;
+    margin-top: 1rem;
+ }
+
+.about-content img {
+    width: 85%;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+
+.about-parallax-02 {
+    /* Set the background image */
+    background-image: url(images/bg01.jpg);
+
+    /* Set a specific height */
+    min-height: 350px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+    margin: 0 3rem 0 3rem;
+}
+
+
+.about-content-text02-h1 {
+    text-align: right;
+}
+
+.about-parallax-03 {
+    /* Set the background image */
+    background-image: url(images/bg01.jpg);
+
+    /* Set a specific height */
+    min-height: 350px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+    margin: 0 3rem 0 3rem;
+}
+
+.about-contacto {
+    background-color: #EEF2E6;
+    margin: 7rem 3rem 0 3rem;
+    padding-bottom: 7rem;
+}
+
+.about-contacto-box {
+    background-color: #3D8361;
+    width: 100%;
+    padding: 3rem 1rem;
+}
+
+.about-contacto-box__form {
+    width: max-content;
+    margin: 3rem auto 0 auto;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.about-contacto-box__form h2 {
+    color: #EEF2E6;
+}
+
+.about-contacto-box img {
+    width: 85%;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+
+.icon-div {
+    width: max-content;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+}
+
+.icon-div__icon {
+    color: #EEF2E6;
+    margin: 0 0.5rem;
+}
+
+.icon-div__icon:hover {
+    color: #D6CDA4;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #EEF2E6;
+    padding-top: 3rem;
+}
+
+.footer > p {
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+/* Portfolio */
+
+.portfolio {
+    background-color: #EEF2E6;
+}
+
+.portfolio-container {
+    width: 90%;
+    margin: 6rem auto 0 auto;
+    padding: 10rem 3rem 7rem 3rem;
+}
+
+.portfolio-container > h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+}
+
+.portfolio-list {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.portfolio-list-item {
+    margin: 0 auto;
+    opacity: 1;
+    cursor: pointer;
+} 
+
+.image-container {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.portfolio-list-item:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: block;
+}
+
+.popup__image {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+@media (max-width: 600px) { 
+    .popup__image {
+        position: relative;
+        width: 95%;
+        display: inline-block;
+        left: 2.5%;
+        /* position: relative; 
+        left: 50%;
+        transform: translateX(-50%); */
+    }
+}
+
+/* Blog  */
+
+.blog-parallax {
+    /* Set the background image */
+    background-image: url(https://images.pexels.com/photos/1473090/pexels-photo-1473090.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+
+    /* Set a specific height */
+    min-height: 350px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+    margin: 0 3rem 0 3rem;
+    height: 55rem;
+}
+
+.blog {
+    background-color: #EEF2E6;
+}
+
+.blog-parallax > h1 {
+    text-align: center;
+    position: relative;
+    top: 32rem;
+    font-size: 5rem;
+    color: #EEF2E6;
+}
+
+.blog-card {
+    margin:3rem 3rem 0 3rem;
+    padding-bottom: 3rem;
+}
+
+ul {
+    list-style: none;
+    margin: 1rem auto;
+    list-style: none;
+    width: 80%;
+    columns: 2 1rem;
+}
+
+@media (max-width: 600px) {
+    ul {
+        columns: 1 1rem;
+    }
+}
+
+.blog-card li {
+    padding-top: 1rem;
+}
+
+/* Blog Entry */
+
+.entry {
+    background-color: #EEF2E6;
+    padding-top: 10rem;
+    white-space: pre-line;
+}
+
+.entry-content {
+    padding: 3rem 5rem;
+}
+
+ .entry-content h1 {
+    text-align: center;
+    margin: 3rem 0;
+ }
+
+ .entry-content img {
+    float: left;
+    margin: 5rem 3rem 1rem 0;
+ }
+
+ @media (max-width: 600px) {
+    img {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* Not Found */
+
+.not-found {
+    background-color: #EEF2E6;
+}
+
+.not-found__container {
+    background-image: url(https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 70rem;
+
+    position: relative;
+}
+
+.not-found__text {
+    position: absolute;
+    bottom: 20%;
+    left: 15%;
+    text-align: left;
+    width: 50%;
+}
+
+.not-found h1 {
+    color: white;
+    font-size: 3.7rem;
+}
+
+.not-found p {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.not-found__bottom {
+    padding: 3rem;
+}
+
+@media (max-width: 600px) {
+    .not-found__text {
+        text-align: center;
+    }
+}
