@@ -16,7 +16,9 @@ function Navbar() {
         <Box className="navbar" sx={{ flexGrow:1 }}>
           <AppBar sx={{background:"#EEF2E6", boxShadow:"none"}}>
             <Toolbar>
-                <img src="/images/logo-01-250.png" alt="logo"/> 
+                <Hash smooth to='/#about'>
+                  <img src="/images/logo-01-250.png" alt="logo"/>
+                </Hash> 
                 {matches ? (
                   <DrawerComp />
                 ) : (

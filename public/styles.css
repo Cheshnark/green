@@ -43,7 +43,7 @@ div .tab {
 
 .about-parallax-01 {
     /* Set the background image */
-    background-image: url(images/bg01.jpg);
+    background-image: url('images/bg01.jpg');
 
     /* Set a specific height */
     min-height: 1000px;
@@ -55,7 +55,7 @@ div .tab {
     background-size: cover;
 
     
-    margin: 0 3rem 0 3rem;
+    margin: 0 3rem;
 }
 
 .about-parallax-01 > h1 {
@@ -71,7 +71,7 @@ div .tab {
 }
 
 .about-content-text {
-    margin: 1rem 5rem 0 5rem;
+    margin: 1rem 3rem 0 3rem;
 }
 
 .about-content-text p{
@@ -136,6 +136,28 @@ div .tab {
     background-color: #3D8361;
     width: 100%;
     padding: 3rem 1rem;
+}
+
+@media(max-width: 720px){
+    .about-parallax-01,
+    .about-parallax-02,
+    .about-parallax-03,
+    .about-content-text {
+        margin: 0 1.5rem;
+    }
+
+    .about-content-text {
+        margin-top: 1.5rem;
+    }
+
+    .about-content-text h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .about-contacto {
+        margin: 5rem 1.5rem 0 1.5rem;
+    }
 }
 
 .about-contacto-box__form {

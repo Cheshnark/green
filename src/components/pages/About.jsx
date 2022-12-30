@@ -6,7 +6,6 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import TextField  from "@mui/material/TextField";
 import Button from '@mui/material/Button';
 import { useTheme, useMediaQuery } from '@mui/material';
-// import { useNavigate } from "react-router-dom";
 import RedAlert from '../RedAlert';
 
 function About() {
@@ -49,12 +48,12 @@ function About() {
   return (
     <div id='about' className='about'>
       <div className="about-parallax-01">
-        <h1>Bananas, Mike</h1>
+        <h1>Natural Shop</h1>
       </div>  
 
       {matches? (
         <div className='about-content-text'>
-          <h1>¿Qué es Natural Shop?</h1>
+          <h2>¿Qué es Natural Shop?</h2>
           <p>Natural shop es justo eso, una tienda natural, no escondemos nada. Vendemos 
           productos naturales y te los llevamos a tu casa. ¿Qué igual no es la manera más 
           ecológica de vender este tipo de productos? Es posible. ¿Pero realmente nos importa
@@ -73,7 +72,7 @@ function About() {
         <Container className='about-content'>
         <Row>
           <Col className='about-content-text'>
-            <h1>¿Qué es Natural Shop?</h1>
+            <h2>¿Qué es Natural Shop?</h2>
             <p>Natural shop es justo eso, una tienda natural, no escondemos nada. Vendemos 
             productos naturales y te los llevamos a tu casa. ¿Qué igual no es la manera más 
             ecológica de vender este tipo de productos? Es posible. ¿Pero realmente nos importa
@@ -99,7 +98,7 @@ function About() {
 
       {matches ? (
         <div className='about-content-text'>
-          <h1>¿Qué es Natural Shop?</h1>
+          <h2>Nuestros principios</h2>
           <p>Natural shop es justo eso, una tienda natural, no escondemos nada. Vendemos 
           productos naturales y te los llevamos a tu casa. ¿Qué igual no es la manera más 
           ecológica de vender este tipo de productos? Es posible. ¿Pero realmente nos importa
@@ -121,7 +120,7 @@ function About() {
             <img src="images/dinosaur01.jpg" alt="dinosaur-img-by-nick-wehrli" />
           </Col>
           <Col className='about-content-text'>
-            <h1 className='about-content-text02-h1'>¿Qué es Natural Shop?</h1>
+            <h2 className='about-content-text02-h1'>Nuestros principios</h2>
             <p>Natural shop es justo eso, una tienda natural, no escondemos nada. Vendemos 
             productos naturales y te los llevamos a tu casa. ¿Qué igual no es la manera más 
             ecológica de vender este tipo de productos? Es posible. ¿Pero realmente nos importa
