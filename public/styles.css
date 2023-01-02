@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -25,7 +27,7 @@ div .tab {
 }
 
 .navbar img{
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 @media (max-width: 600px) {
@@ -35,10 +37,21 @@ div .tab {
     }
 }
 
+@media (min-width: 600px) {
+    .navbar img {
+        max-width: 180px;
+    }
+}
+
+.drawer img {
+    width: 80%;
+}
+
 /* About */
 
 .about {
     background-color: #EEF2E6;
+    padding-top: 5rem;
 }
 
 .about-parallax-01 {
@@ -46,7 +59,7 @@ div .tab {
     background-image: url('images/bg01.jpg');
 
     /* Set a specific height */
-    min-height: 1000px;
+    min-height: 750px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -54,14 +67,15 @@ div .tab {
     background-repeat: no-repeat;
     background-size: cover;
 
-    
+    /* Other values */
     margin: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about-parallax-01 > h1 {
     text-align: center;
-    position: relative;
-    top: 32rem;
     font-size: 5rem;
     color: #EEF2E6;
 }
@@ -215,14 +229,30 @@ div .tab {
 
 .portfolio-container {
     width: 90%;
-    margin: 6rem auto 0 auto;
-    padding: 10rem 3rem 7rem 3rem;
+    margin: 0 auto 0 auto;
+    padding: 12rem 3rem 7rem 3rem;
 }
 
 .portfolio-container > h1 {
     text-align: center;
     margin-bottom: 3rem;
     font-size: 4rem;
+}
+
+@media(max-width: 720px) {
+    .portfolio-container {
+        width: 100%;
+    }
+}
+
+@media(max-width: 950px) {
+    .portfolio-container {
+        width: 100%;
+    }
+
+    .portfolio-list {
+        width: 100%;
+    }
 }
 
 .portfolio-list {
@@ -260,25 +290,29 @@ div .tab {
     display: block;
 }
 
+.pop-up-image-container {
+    position: absolute;
+    top: 51%;
+    right: 17%;
+    width: 65%;
+}
+
 .popup__image {
     position: absolute;
-    top: 25%;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+
     text-align: center;
+    width: 85%;
+    max-height: 85vh;
     
 }
 
 @media (max-width: 600px) { 
     .popup__image {
-        position: relative;
         width: 95%;
-        display: inline-block;
-        left: 2.5%;
-        /* position: relative; 
-        left: 50%;
-        transform: translateX(-50%); */
     }
 }
 
@@ -289,7 +323,7 @@ div .tab {
     background-image: url(https://images.pexels.com/photos/1473090/pexels-photo-1473090.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 
     /* Set a specific height */
-    min-height: 350px;
+    min-height: 750px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -297,19 +331,20 @@ div .tab {
     background-repeat: no-repeat;
     background-size: cover;
 
-    
-    margin: 0 3rem 0 3rem;
-    height: 55rem;
+    /* Other values */
+    margin: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .blog {
     background-color: #EEF2E6;
+    padding-top: 5rem;
 }
 
 .blog-parallax > h1 {
     text-align: center;
-    position: relative;
-    top: 32rem;
     font-size: 5rem;
     color: #EEF2E6;
 }
@@ -323,18 +358,18 @@ ul {
     list-style: none;
     margin: 1rem auto;
     list-style: none;
-    width: 80%;
-    columns: 2 1rem;
-}
-
-@media (max-width: 600px) {
-    ul {
-        columns: 1 1rem;
-    }
+    width: 100%;
+    columns: 2 0.5rem;
 }
 
 .blog-card li {
     padding-top: 1rem;
+}
+
+@media (max-width: 600px) {
+    .blog-card ul {
+        padding: 0;
+    }
 }
 
 /* Blog Entry */

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Drawer, List, ListItemIcon, ListItemButton, ListItemText} from "@mui/material";
 import DrawerButton from "./DrawerButton";
-// import {HashLink as Hash} from 'react-router-hash-link';
+import {HashLink as Hash} from 'react-router-hash-link';
 
 function DrawerComp(){
     const [drawerState, setDrawerState] = useState(false);
@@ -25,17 +25,20 @@ function DrawerComp(){
     return (
         <div>
             <Drawer open={drawerState}
-            onClose={changeDrawer}>
+            onClose={changeDrawer}
+            className="drawer">
                 <List>
-                    <ListItemButton>
-                        <ListItemIcon>
-                            <ListItemText onClick={changeDrawer}><img src="images/logo-01-250.png" alt="logo"/></ListItemText>
-                        </ListItemIcon>
-                    </ListItemButton>   
+                    <Hash smooth to='/#about'>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                <ListItemText onClick={changeDrawer}><img src="images/logo-01-250.png" alt="logo"/></ListItemText>
+                            </ListItemIcon>
+                        </ListItemButton>   
+                    </Hash>
                     {pages.map((page,index) =>(
                         <ListItemButton key={index} href={dynamicUrl(page)} onClick={changeDrawer}>
                             <ListItemIcon>
-                                <ListItemText>{page}</ListItemText>
+                                <ListItemText sx={{textAlign:"right"}}>{page}</ListItemText>
                             </ListItemIcon>
                         </ListItemButton>  
                         ))

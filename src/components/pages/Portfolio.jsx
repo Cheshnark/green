@@ -29,10 +29,10 @@ const Portfolio = ({itemData}) => {
                 <div className="portfolio-container">
                 <h1>Portfolio</h1>
                 {matches2 ? 
-                    <ImageList className='portfolio-list' sx={{ width: '80%', height: 'auto' }} cols={1} rowHeight={'50%'} gap={'2rem'}>
+                    <ImageList className='portfolio-list' sx={{ width: "100%", height: 'auto'}} cols={1} rowHeight={'50%'} gap={'2rem'}>
                     {itemData.map((item, index) => (
                     <div className="image-container"> 
-                        <ImageListItem className='portfolio-list-item' sx={{ width: 400, height: 400 }}key={item.img}>
+                        <ImageListItem className='portfolio-list-item' sx={{ width: 400, minWidth:"25%", height: 400, minHeigh: "25%", margin:"0 auto" }}key={item.img}>
                             <img
                               src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
                               srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
@@ -45,10 +45,10 @@ const Portfolio = ({itemData}) => {
                     </div>))}    
                 </ImageList> : (
                     matches ? (
-                    <ImageList className='portfolio-list' sx={{ width: '80%', height: 'auto' }} cols={2} rowHeight={'50%'} gap={'2rem'}>
+                    <ImageList className='portfolio-list' sx={{ width: '80%', minWidth:"830px", height: 'auto' }} cols={2} rowHeight={'50%'} gap={'1rem'}>
                     {itemData.map((item, index) => (
                     <div className="image-container"> 
-                        <ImageListItem className='portfolio-list-item' sx={{ width: 400, height: 400 }}key={item.img}>
+                        <ImageListItem className='portfolio-list-item' sx={{ width: "50%", minWidth: 400, minHeight: 400 }}key={item.img}>
                             <img
                               src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
                               srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
@@ -79,7 +79,9 @@ const Portfolio = ({itemData}) => {
 
            { open && 
             <div className="popup-container" onClick={hide}>
-                <img className='popup__image' src={zoom} alt={title} />
+                <div className='pop-up-image-container' >
+                    <img className='popup__image' src={zoom} alt={title} />
+                </div>
             </div>} 
 
         </div>
