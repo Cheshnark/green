@@ -376,8 +376,14 @@ ul {
 
 .entry {
     background-color: #EEF2E6;
-    padding-top: 10rem;
+    padding-top: 7rem;
     white-space: pre-line;
+}
+
+@media (max-width: 600px) {
+    .entry {
+        padding-top: 3rem;
+    }
 }
 
 .entry-content {

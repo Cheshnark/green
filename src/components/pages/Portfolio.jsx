@@ -11,7 +11,6 @@ const Portfolio = ({itemData}) => {
     const [title, setTitle] = useState();
     const [open, setOpen] = useState(false);
 
-
     const enlarge = (event) => {
         let id = event.target.id
         setZoom(itemData[id].img);
@@ -28,7 +27,8 @@ const Portfolio = ({itemData}) => {
         <div className="portfolio">
                 <div className="portfolio-container">
                 <h1>Portfolio</h1>
-                {matches2 ? 
+                {itemData && (
+                matches2 ? 
                     <ImageList className='portfolio-list' sx={{ width: "100%", height: 'auto'}} cols={1} rowHeight={'50%'} gap={'2rem'}>
                     {itemData.map((item, index) => (
                     <div className="image-container"> 
@@ -74,7 +74,8 @@ const Portfolio = ({itemData}) => {
                             />
                         </ImageListItem>
                     </div>))}
-                </ImageList>))}
+                </ImageList>))
+                )}
             </div>
 
            { open && 

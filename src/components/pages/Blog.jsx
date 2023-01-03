@@ -21,8 +21,8 @@ const Blog = () => {
                         <ul>
                         {data.map( blog => {
                             return(
-                                <Link to={`/blog/${blog.id}`} style={{ textDecoration: 'none', color:'black' }}>
-                                    <li key={blog.id}><CardComponent blog={blog} /></li>                            
+                                <Link to={`/blog/${blog._id}`} style={{ textDecoration: 'none', color:'black' }}>
+                                    <li key={blog._id}><CardComponent blog={blog} /></li>                            
                                 </Link>
                             );
                         })
