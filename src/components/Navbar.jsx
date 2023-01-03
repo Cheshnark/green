@@ -3,6 +3,7 @@ import { AppBar, Toolbar, Tabs, Tab, Box, useTheme, useMediaQuery } from "@mui/m
 import DrawerComp from "./DrawerComp";
 import {Link} from 'react-router-dom';
 import {HashLink as Hash} from 'react-router-hash-link';
+import logo from '../images/logo-01-250.png';
 
 
 function Navbar() {
@@ -36,7 +37,7 @@ function Navbar() {
       <AppBar sx={{background:"#EEF2E6", boxShadow:"none"}}>
         <Toolbar>
           <Hash smooth to='/#about'>
-            <img src="/images/logo-01-250.png" alt="logo"/>
+            <img src={logo} alt="logo"/>
           </Hash> 
           {matches ? (
             <DrawerComp />

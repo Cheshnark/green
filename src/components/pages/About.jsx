@@ -8,6 +8,10 @@ import Button from '@mui/material/Button';
 import { useTheme, useMediaQuery } from '@mui/material';
 import RedAlert from '../RedAlert';
 
+import girl from '../../images/girl01.jpg';
+import dinosaur from '../../images/dinosaur01.jpg';
+import logo from '../../images/logo-01-350.png';
+
 function About() {
 
   const [name, setName] = useState('');
@@ -54,17 +58,19 @@ function About() {
       {matches? (
         <div className='about-content-text'>
           <h2>¿Qué es Natural Shop?</h2>
-          <p>Natural shop es justo eso, una tienda natural, no escondemos nada. Vendemos 
-          productos naturales y te los llevamos a tu casa. ¿Qué igual no es la manera más 
-          ecológica de vender este tipo de productos? Es posible. ¿Pero realmente nos importa
-          el medio ambiente? ¿O es que acaso tan solo queremos que pienses que nos importa?
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at mollis eros.
+          Curabitur pulvinar turpis eget congue sagittis. Ut eu mauris nunc. Aenean a ornare est.
+          Sed et pellentesque ante. Proin feugiat ante et ullamcorper porta. Duis quis malesuada
+          tellus, in ultricies metus.
           <br /><br />
-          En cualquier caso, te vendemos lo que quieres y necesitas para demostrar a todo tu 
-          entorno lo mucho que te importa el mundo, el medio ambiente, las focas del ártico y 
-          los niños bengalíes que no tejen nuestras prendas. Tampoco tenemos muy clara la 
-          procedencia de nuestras materias primas, pero hemos hecho un logo "sostenible" para 
-          que se vea bien en todos nuestros productos y para que el resto de gente sepa de tu 
-          superioridad moral.
+          Curabitur iaculis purus enim, in tempus velit faucibus non. Morbi mattis erat in 
+          sollicitudin iaculis. Etiam faucibus, lectus sit amet efficitur finibus, massa enim ornare 
+          neque, eget placerat neque ante vel ipsum. Interdum et malesuada fames ac ante ipsum primis 
+          in faucibus. Vestibulum aliquet, ante ac aliquam pharetra, ex enim ornare nunc, sed varius 
+          metus nibh in est. Mauris luctus aliquam neque, vel fringilla urna dictum in. Curabitur 
+          risus mauris, commodo at laoreet quis, mollis at felis. Vestibulum in elementum metus, 
+          laoreet bibendum arcu. Pellentesque iaculis mauris id semper cursus. Proin dignissim gravida 
+          ipsum, sit amet convallis sapien luctus in.
           <br /><br />
           ¿A qué esperas para parecer parte del cambio?</p>
         </div>
@@ -73,22 +79,24 @@ function About() {
         <Row>
           <Col className='about-content-text'>
             <h2>¿Qué es Natural Shop?</h2>
-            <p>Natural shop es justo eso, una tienda natural, no escondemos nada. Vendemos 
-            productos naturales y te los llevamos a tu casa. ¿Qué igual no es la manera más 
-            ecológica de vender este tipo de productos? Es posible. ¿Pero realmente nos importa
-            el medio ambiente? ¿O es que acaso tan solo queremos que pienses que nos importa?
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at mollis eros.
+            Curabitur pulvinar turpis eget congue sagittis. Ut eu mauris nunc. Aenean a ornare est.
+            Sed et pellentesque ante. Proin feugiat ante et ullamcorper porta. Duis quis malesuada
+            tellus, in ultricies metus.
             <br /><br />
-            En cualquier caso, te vendemos lo que quieres y necesitas para demostrar a todo tu 
-            entorno lo mucho que te importa el mundo, el medio ambiente, las focas del ártico y 
-            los niños bengalíes que no tejen nuestras prendas. Tampoco tenemos muy clara la 
-            procedencia de nuestras materias primas, pero hemos hecho un logo "sostenible" para 
-            que se vea bien en todos nuestros productos y para que el resto de gente sepa de tu 
-            superioridad moral.
+            Curabitur iaculis purus enim, in tempus velit faucibus non. Morbi mattis erat in 
+            sollicitudin iaculis. Etiam faucibus, lectus sit amet efficitur finibus, massa enim ornare 
+            neque, eget placerat neque ante vel ipsum. Interdum et malesuada fames ac ante ipsum primis 
+            in faucibus. Vestibulum aliquet, ante ac aliquam pharetra, ex enim ornare nunc, sed varius 
+            metus nibh in est. Mauris luctus aliquam neque, vel fringilla urna dictum in. Curabitur 
+            risus mauris, commodo at laoreet quis, mollis at felis. Vestibulum in elementum metus, 
+            laoreet bibendum arcu. Pellentesque iaculis mauris id semper cursus. Proin dignissim gravida 
+            ipsum, sit amet convallis sapien luctus in.
             <br /><br />
             ¿A qué esperas para parecer parte del cambio?</p>
           </Col>
           <Col>
-            <img src="images/girl01.jpg" alt="girl-img-by-gustavo-fring" />
+            <img src={girl} alt="girl-img-by-gustavo-fring" />
           </Col>
         </Row>
       </Container>)}
@@ -99,17 +107,19 @@ function About() {
       {matches ? (
         <div className='about-content-text'>
           <h2>Nuestros principios</h2>
-          <p>Natural shop es justo eso, una tienda natural, no escondemos nada. Vendemos 
-          productos naturales y te los llevamos a tu casa. ¿Qué igual no es la manera más 
-          ecológica de vender este tipo de productos? Es posible. ¿Pero realmente nos importa
-          el medio ambiente? ¿O es que acaso tan solo queremos que pienses que nos importa?
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at mollis eros.
+          Curabitur pulvinar turpis eget congue sagittis. Ut eu mauris nunc. Aenean a ornare est.
+          Sed et pellentesque ante. Proin feugiat ante et ullamcorper porta. Duis quis malesuada
+          tellus, in ultricies metus.
           <br /><br />
-          En cualquier caso, te vendemos lo que quieres y necesitas para demostrar a todo tu 
-          entorno lo mucho que te importa el mundo, el medio ambiente, las focas del ártico y 
-          los niños bengalíes que no tejen nuestras prendas. Tampoco tenemos muy clara la 
-          procedencia de nuestras materias primas, pero hemos hecho un logo "sostenible" para 
-          que se vea bien en todos nuestros productos y para que el resto de gente sepa de tu 
-          superioridad moral.
+          Curabitur iaculis purus enim, in tempus velit faucibus non. Morbi mattis erat in 
+          sollicitudin iaculis. Etiam faucibus, lectus sit amet efficitur finibus, massa enim ornare 
+          neque, eget placerat neque ante vel ipsum. Interdum et malesuada fames ac ante ipsum primis 
+          in faucibus. Vestibulum aliquet, ante ac aliquam pharetra, ex enim ornare nunc, sed varius 
+          metus nibh in est. Mauris luctus aliquam neque, vel fringilla urna dictum in. Curabitur 
+          risus mauris, commodo at laoreet quis, mollis at felis. Vestibulum in elementum metus, 
+          laoreet bibendum arcu. Pellentesque iaculis mauris id semper cursus. Proin dignissim gravida 
+          ipsum, sit amet convallis sapien luctus in.
           <br /><br />
           ¿A qué esperas para parecer parte del cambio?</p>
         </div>
@@ -117,21 +127,23 @@ function About() {
         <Container className='about-content'>
         <Row>
           <Col>
-            <img src="images/dinosaur01.jpg" alt="dinosaur-img-by-nick-wehrli" />
+            <img src={dinosaur} alt="dinosaur-img-by-nick-wehrli" />
           </Col>
           <Col className='about-content-text'>
             <h2 className='about-content-text02-h1'>Nuestros principios</h2>
-            <p>Natural shop es justo eso, una tienda natural, no escondemos nada. Vendemos 
-            productos naturales y te los llevamos a tu casa. ¿Qué igual no es la manera más 
-            ecológica de vender este tipo de productos? Es posible. ¿Pero realmente nos importa
-            el medio ambiente? ¿O es que acaso tan solo queremos que pienses que nos importa?
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at mollis eros.
+            Curabitur pulvinar turpis eget congue sagittis. Ut eu mauris nunc. Aenean a ornare est.
+            Sed et pellentesque ante. Proin feugiat ante et ullamcorper porta. Duis quis malesuada
+            tellus, in ultricies metus.
             <br /><br />
-            En cualquier caso, te vendemos lo que quieres y necesitas para demostrar a todo tu 
-            entorno lo mucho que te importa el mundo, el medio ambiente, las focas del ártico y 
-            los niños bengalíes que no tejen nuestras prendas. Tampoco tenemos muy clara la 
-            procedencia de nuestras materias primas, pero hemos hecho un logo "sostenible" para 
-            que se vea bien en todos nuestros productos y para que el resto de gente sepa de tu 
-            superioridad moral.
+            Curabitur iaculis purus enim, in tempus velit faucibus non. Morbi mattis erat in 
+            sollicitudin iaculis. Etiam faucibus, lectus sit amet efficitur finibus, massa enim ornare 
+            neque, eget placerat neque ante vel ipsum. Interdum et malesuada fames ac ante ipsum primis 
+            in faucibus. Vestibulum aliquet, ante ac aliquam pharetra, ex enim ornare nunc, sed varius 
+            metus nibh in est. Mauris luctus aliquam neque, vel fringilla urna dictum in. Curabitur 
+            risus mauris, commodo at laoreet quis, mollis at felis. Vestibulum in elementum metus, 
+            laoreet bibendum arcu. Pellentesque iaculis mauris id semper cursus. Proin dignissim gravida 
+            ipsum, sit amet convallis sapien luctus in.
             <br /><br />
             ¿A qué esperas para parecer parte del cambio?</p>
           </Col>
@@ -147,7 +159,7 @@ function About() {
       <Container className='about-contacto-box'>
         <Row>
           <Col md= {4} s={12}>
-            <img src="images/logo-01-350.png" alt="logo" />
+            <img src={logo} alt="logo" />
           </Col>
           <Col>
             <form className='about-contacto-box__form' noValidate onSubmit={handleSubmit}>
