@@ -37,7 +37,7 @@ function About() {
 
     const user = {name, email};
 
-    fetch('http://localhost:8000/users/', {
+    fetch('https://green-server-production.up.railway.app/users/', {
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify(user)

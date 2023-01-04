@@ -28,7 +28,7 @@ const customTheme = createTheme({
 });
 
 function App() {
-    const {data:itemData} = useFetch('http://localhost:8000/img');
+    const {data:itemData} = useFetch('https://green-server-production.up.railway.app/img');
 
     return (
         <ThemeProvider theme={customTheme}>

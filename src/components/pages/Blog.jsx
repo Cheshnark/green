@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Blog = () => {
 
-    const {data, error, pending} = useFetch('http://localhost:8000/blog');
+    const {data, error, pending} = useFetch('https://green-server-production.up.railway.app/blog');
 
     return(
         <div className="blog">

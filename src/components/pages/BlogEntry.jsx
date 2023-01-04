@@ -4,7 +4,7 @@ import useFetch from '../useFetch';
 
 function BlogEntry() {
 const {id} = useParams();
-const {data:blog, pending, error} = useFetch('http://localhost:8000/blog/' + id);
+const {data:blog, pending, error} = useFetch('https://green-server-production.up.railway.app/blog/' + id);
 
   return (
     <div className="entry">
